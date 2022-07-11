@@ -1,6 +1,8 @@
 <template>
     <div class="conatiner">
-        <button class="button" :style="{
+        <button class="button" 
+        @click="func"
+        :style="{
         'background-color': color,
         'font-size': fontSize
         }">
@@ -14,7 +16,8 @@ export default {
     props: {
         text: String,
         color: String,
-        fontSize: String
+        fontSize: String,
+        func: Function
     },
     setup(props) {
         console.log(props.text);

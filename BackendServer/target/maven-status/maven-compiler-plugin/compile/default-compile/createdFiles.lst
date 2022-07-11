@@ -1,0 +1,7 @@
+handlers/CORSRemover.class
+handlers/CalcHandler.class
+Main.class
+handlers/UpdateHandler.class
+singletons/DataSingleton.class
+handlers/FetchHandler.class
+handlers/RootHandler.class

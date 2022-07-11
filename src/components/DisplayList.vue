@@ -1,15 +1,14 @@
 <template>
     <div class="list-container">
-        <div class="recipt-item" v-for="item in items" :key="item.type">
-            <p class="recipt-type">{{ item.type }}</p>
-            <p class="recipt-value">$ {{ item.value }} </p>
+        <div class="receipt-item" v-for="(item, index) in valueList" :key="index">
+            <p class="receipt-type">{{ item  }}</p>
         </div>
-        <div class="new-recipt-container"></div>
-        <div class="button-container">
-            <BasicButton class="new-recipt-button"
-            text="Create new recipt"
+        <div class="new-receipt-container"></div> <div class="button-container">
+            <BasicButton class="new-receipt-button"
+            text="Create new receipt"
             color="#2274a5"
             :fontSize="14"
+            :func="createFunc"
             >
             </BasicButton>
         </div>
@@ -19,21 +18,19 @@
 import BasicButton from './BasicButton.vue'
 export default {
     name: 'DisplayList',
-    data() {
-        return {
-            items: [
-                { type: "Foo", value: 14},
-                { type: "Bar", value: 50},
-                { type: "Bar", value: 50},
-                { type: "Bar", value: 50},
-                { type: "Bar", value: 50},
-                { type: "Bar", value: 50},
-            ]
+    props: {
+        valueList: {
+            type: Array,
+            required: true
+        },
+        createFunc: {
+            type: Function,
+            required: true
         }
-  },
+    },
     components: {
         BasicButton
-  },
+    },
     setup() {
     }
 }
@@ -41,25 +38,25 @@ export default {
 <style scoped>
 .list-container {
     margin-top: 10px;
-    height: 50vh;
-    width: 70%;
+    height: auto;
+    width: 75%;
     border: dotted 2px black;
     border-bottom: none;
 }
-.recipt-item {
+.receipt-item {
     display: flex;
     justify-content: space-evenly;
     border-bottom: solid 2px lightgray;
 }
-.recipt-type {
+.receipt-type {
     font-weight: bold;
 }
-.new-recipt-conatiner {
+.new-receipt-conatiner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.new-recipt-button {
+.new-receipt-button {
     margin: 15px;
 }
 </style>

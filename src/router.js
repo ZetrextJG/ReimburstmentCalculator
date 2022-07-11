@@ -7,11 +7,17 @@ const routes = [
     path: "/",
     name: "Home",
     component: CalculatorPage,
+    meta: {
+        title: "Calculator Page"
+    }
   },
   {
     path: "/admin",
     name: "Admin",
     component: AdminPage,
+    meta: {
+        title: "Admin Page"
+    }
   },
 ];
 
@@ -19,6 +25,11 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+router.beforeEach((to, _, next) => {
+  document.title = to.meta.title
+  next()
+})
 
 export default router;
 

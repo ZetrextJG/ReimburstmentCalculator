@@ -1,49 +1,49 @@
 <template>
     <div class="dialog-box">
         <div class="milage-box">
-            <p>Milage</p>
-            <input
-                placeholder="Miles driven"
-                :value="miles"
-                @input="updateMiles($event.target.value)">
+            <p>Dollar per mile</p>
+            <input 
+                :value="mileRate"
+                @input="updateMileRate($event.target.value)"
+                placeholder="Mile rate">
         </div>
         <div class="allowance-box">
-            <p>Days of allowance</p>
+            <p>Allowance per day</p>
             <input 
-                placeholder="Number of days"
-                :value="days"
-                @input="updateDays($event.target.value)">
+                :value="allowance"
+                @input="updateAllowance($event.target.value)"
+                placeholder="Allowance rate">
         </div>
     </div>    
 </template>
 <script>
 export default {
-    name: "InputBox",
+    name: "ValueSetter",
     props: {
-        days: {
+        mileRate: {
             type: Number,
             required: true
         },
-        miles: {
+        allowance: {
             type: Number,
             required: true
-        },
-    },
-    methods: {
-        updateMiles(value) {
-            if (/^[\d+\\.]*\d+/.test(value)){
-                this.$emit('update:miles', parseFloat(value))
-            }
-        },
-        updateDays(value) {
-            if (/^[\d+\\.]*\d+/.test(value)){
-                this.$emit('update:days', parseFloat(value))
-            }
-        },
+        }
     },
     setup() {
         
     },
+    methods: {
+        updateAllowance(value) {
+            if (/^[\d+\\.]*\d+/.test(value)){
+                this.$emit('update:allowance', parseFloat(value))
+            }
+        },
+        updateMileRate(value) {
+            if (/^[\d\\.]*\d+/.test(value)){
+                this.$emit('update:mileRate', parseFloat(value))
+            }
+        }
+    }
 }
 </script>
 <style scoped>
