@@ -20,11 +20,11 @@ and install the Microsoft build of OpenJDK 11.
 
 Scroll down and find "OpenJDK 11" and download the x64 msi executable for Windows
 
-![Download page](.\intructions\MicrosoftOpenJDK.png)
+![Download page](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/MicrosoftOpenJDK.png?raw=true)
 
 During installation select to create JAVA_HOME variable.
 
-![Java Installation](.\intructions\InstallingJava.PNG)
+![Java Installation](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/InstallingJava.PNG?raw=true)
 
 #### Changing PATH variable
 
@@ -45,7 +45,7 @@ Maven is a build tool that allows us to easily test compile and run Java project
 To install Maven all you have to do is download zip with binaries from:
 [Apache Maven Download Page](https://maven.apache.org/download.cgi)
 
-![Maven Download Page](.\intructions\MavenDownload.PNG)
+![Maven Download Page](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/MavenDownload.PNG?raw=true)
 
 Download "Binary zip archive" and unpack it to an easily accessible location on your drive.
 For example:
@@ -65,7 +65,7 @@ In our case we need to add:
 
 Go to the Node.js site and download the Latest version of node (Current version)
 [Node.js Site](https://nodejs.org/en/)
-![](.\intructions\Node.PNG)
+![Node Site](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/Node.PNG?raw=true)
 
 Download the installer and go through the basic installation.
 
@@ -85,16 +85,16 @@ npm -g install yarn
 If you are familiar with git, you need to simply clone the repository
 
 In other case download and unpack zip:
-![Github Clone Repo](.\intructions\clone.PNG)
+![Github Clone Repo](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/clone.PNG?raw=true)
 
 You should have a folder structure similar to this:
-![Folder structure](.\intructions\Folders.PNG)
+![Folder structure](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/Folders.PNG?raw=true)
 
 ### Startup a backend server
 Enter the BackendServer folder and click on the top bar and input cmd
 in order to start a console with working directory set to our BackendServer folder.
-![Before](.\intructions\TopBarBefore.PNG)
-![After](.\intructions\TopBarAfter.png)
+![Before](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/TopBarBefore.PNG?raw=true)
+![After](https://github.com/ZetrextJG/reimburstment_calc/blob/main/intructions/TopBarAfter.png?raw=true)
 
 If you have installed Maven correctly you will have access to mvn command.
 
