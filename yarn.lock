@@ -5795,7 +5795,7 @@ vue-loader@^17.0.0:
 
 vue-router@4:
   version "4.1.1"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.1.tgz#90cc533efafdcf90d157bdc20a376760cdb59c10"
+  resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.1.1.tgz"
   integrity sha512-Wp1mEf2xCwT0ez7o9JvgpfBp9JGnVb+dPERzXDbugTatzJAJ60VWOhJKifQty85k+jOreoFHER4r5fu062PhPw==
   dependencies:
     "@vue/devtools-api" "^6.1.4"

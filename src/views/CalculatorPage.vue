@@ -79,12 +79,6 @@ export default {
         }
     },
     methods: {
-        popupToggle() {
-            if(!this.popupTrigger){
-                this.fetchPossibleTypes();
-            }
-            this.popupTrigger= !this.popupTrigger;
-        },
         fetchPossibleTypes() {
             const requestOptions = {
                 method: "GET",
@@ -121,6 +115,13 @@ export default {
             fetch("http://localhost:9000/calculate", requestOptions)
                 .then(res => res.json())
                 .then(data => this.total = data.value);
+        },
+        popupToggle() {
+            if(!this.popupTrigger){
+                console.log("TEST");
+                this.fetchPossibleTypes();
+            }
+            this.popupTrigger= !this.popupTrigger;
         }
     },
     mounted() {

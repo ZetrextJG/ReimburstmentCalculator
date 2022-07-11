@@ -1,7 +1,7 @@
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/handlers/CORSRemover.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/handlers/RootHandler.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/Main.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/singletons/DataSingleton.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/handlers/UpdateHandler.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/handlers/CalcHandler.java
-/home/zetrext/Code/reimburstment_calc/BackendServer/src/main/java/handlers/FetchHandler.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\handlers\FetchHandler.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\handlers\CalcHandler.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\singletons\DataSingleton.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\handlers\UpdateHandler.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\utils\CORSRemover.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\handlers\RootHandler.java
+C:\Users\jakub\Code\reimburstment_calc\BackendServer\src\main\java\Main.java
